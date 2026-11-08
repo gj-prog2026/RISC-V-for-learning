@@ -11,7 +11,7 @@ logic [BYTE_WIDTH-1:0] rom_array [2**A_WIDTH-1: 0];
 
 initial begin
     $display("loading rom");
-    $readmemh("tests/instructions.mem", rom_array);
+    $readmemh("verification/instructions.mem", rom_array);
 end
 
 
